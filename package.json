@@ -1,0 +1,40 @@
+{
+  "name": "libraryapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": " app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app:* nodemon app.js",
+    "lint": "./node_modules/.bin/eslint app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4.6.0",
+    "chalk": "4.1.0",
+    "debug": "4.3.1",
+    "ejs": "3.1.5",
+    "express": "4.17.1",
+    "morgan": "1.10.0",
+    "mssql": "6.3.1",
+    "nodemon": "2.0.7",
+    "pug": "3.0.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE-ENV": "development",
+      "PORT": 4000
+    }
+  },
+  "devDependencies": {
+    "eslint": "7.19.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.22.1"
+  }
+}
